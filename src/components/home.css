@@ -1,0 +1,168 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  padding-top: 80px; /* To create a gap between the fixed header and content */
+}
+
+/* Fixed header styling */
+.main-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  padding: 20px;
+  background-color: #f39c12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 100px; /* Removed margin-top to avoid issue with fixed positioning */
+}
+
+/* Hover effect for main title */
+.main-title:hover {
+  background-color: #e67e22;
+}
+
+.main-title.fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+.card img{
+  width: 300px;
+  height: 200px;
+  border-radius: 20%;
+
+
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card styling */
+.card {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: hwb(193 44% 49%);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image zoom-in effect */
+.section-image{
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border-radius: 30%;
+}
+
+.section-image.zoomIn:hover {
+  transform: scale(1.05);
+}
+
+/* Fade-in animation for cards */
+.card h2, .card p {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional spacing and formatting */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.apply-button:hover {
+  background-color: #2980b9;
+}
+
+.apply-button.zoomIn {
+  animation: zoomIn 0.5s ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .section-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  .apply-button {
+    font-size: 1rem;
+  }
+}
