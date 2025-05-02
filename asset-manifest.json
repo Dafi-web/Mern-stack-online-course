@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Mern-stack-online-course/static/css/main.d8de0837.css",
-    "main.js": "/Mern-stack-online-course/static/js/main.de1d92f8.js",
+    "main.js": "/Mern-stack-online-course/static/js/main.65fc10a2.js",
     "index.html": "/Mern-stack-online-course/index.html",
     "main.d8de0837.css.map": "/Mern-stack-online-course/static/css/main.d8de0837.css.map",
-    "main.de1d92f8.js.map": "/Mern-stack-online-course/static/js/main.de1d92f8.js.map"
+    "main.65fc10a2.js.map": "/Mern-stack-online-course/static/js/main.65fc10a2.js.map"
   },
   "entrypoints": [
     "static/css/main.d8de0837.css",
-    "static/js/main.de1d92f8.js"
+    "static/js/main.65fc10a2.js"
   ]
 }
